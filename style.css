@@ -1,0 +1,237 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Comforter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400&display=swap');
+
+
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.n {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #4B53F2;
+    justify-content: flex-start;
+    color: white;
+    height: 40rem;
+}
+
+.trigger {
+    display: none;
+}
+.hamburger {
+    cursor: pointer;
+    margin-right: 10px;
+    float: left;
+}
+
+.menu {
+    cursor: pointer;
+}
+nav {
+    background: Gold;
+    width: 50vw;
+    padding: 30px 70px;
+    margin-top: 10px;
+    position: absolute;
+    left:50vw;
+    top: -100vw;
+    box-sizing: border-box;
+    transition: top 0.3s ease-in-out;
+    border-radius: 6px;
+}
+.trigger:checked ~ nav {
+    top: 50px;
+}
+nav ul {
+    list-style-type: none;
+    opacity: 1;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    margin-bottom: 10px;
+    opacity: 1;
+}
+nav ul li a {
+    text-decoration: none;
+    opacity: 1;
+    color: black;
+}
+
+
+.menu>img {
+    height: 2rem;
+    width: 2rem;
+}
+
+.name>h1 {
+    font-family: 'Comforter', cursive;
+    font-size: 3rem;
+}
+
+.aboutme {
+    font-family: 'Playfair Display', serif;
+}
+
+.hero {
+    height:90%;
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 5%;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.mypic{
+    padding-left:2rem;
+}
+
+.mypic>img {
+    border-radius: 100%;
+}
+
+.school, .collage, .photography, .more, .link{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    width:100%;
+    padding: 30px;
+}
+
+.sinfo,.cinfo,.pinfo, .more{
+    align-items: center;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.simg{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center;
+    padding: 30px;
+}
+
+.simg>img{
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.collage{
+    justify-content: flex-end;
+}
+
+.cinfo{
+    padding:35px;
+}
+
+.pimg{
+    display: flex;
+    justify-content:space-around;
+    padding: 30px;
+    align-items: center;
+}
+
+.pimg>img {
+    width: 300px;
+    object-fit: cover;
+    border-radius: 40px;
+}
+
+.more{
+    flex-direction: column;
+    width: 100%;
+    height: 20rem;
+    justify-content: space-evenly;
+}
+
+.link{
+    justify-content:space-around;
+}
+
+.insta, .git{
+    display:flex;
+    border: #808080 1px solid;
+    border-radius: 5px;
+    width:15%;
+    justify-content: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.end{
+    display:flex;
+    flex-direction: column;
+    background-color: black;
+    color:white;
+    font-family: 'Playfair Display', serif;
+    padding:5%;
+}
+
+.mail{
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.logo{
+    display:flex;
+    width:100%;
+}
+
+.linkedin, .insta2, .git2, .port, .mail2{
+    padding-right: 1%;
+    /* padding-left: 1%; */
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+
+/* Create four equal columns that sits next to each other */
+.column {
+flex: 25%;
+max-width: 25%;
+padding: 0 4px;
+}
+
+.column img {
+margin-top: 8px;
+vertical-align: middle;
+width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+.column {
+    flex: 50%;
+    max-width: 50%;
+}
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+.column {
+    flex: 100%;
+    max-width: 100%;
+}
+}
