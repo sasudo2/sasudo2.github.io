@@ -1,11 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sanjay Shrestha</title>
-</head>
-<body>
-  <h1>Sanjay Shrestha</h1>
-</body>
-</html>
+---
+layout: base.njk
+title: Sanjay Shrestha | Machine Learning Portfolio
+description: Sanjay Shrestha builds machine learning systems from messy, real-world data to evaluated models.
+navCurrent: home
+---
+
+<main>
+    <section class="section hero-section">
+        <div class="container narrow">
+            <p class="kicker">Machine Learning Engineer</p>
+            <h1 class="claim">I take messy, real-world ML problems from raw data to working, evaluated models.</h1>
+            <p class="lead">I self-labeled sparse satellite imagery for landslide detection and fine-tuned Llama2 on heterogeneous code data for code generation. I am looking to work with early-stage teams that need someone who can execute end-to-end when the problem is not clean.</p>
+            <a class="cta" href="mailto:sanjayashrestha777@gmail.com">Email me</a>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container narrow">
+            <h2>Proof</h2>
+            <div class="proof-strip">
+                <p>Fine-tuned Llama2 with QLoRA under privacy and cost constraints, then evaluated with Pass@1, Pass@5, BLEU, and CodeBLEU.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2>Featured Project</h2>
+            <article class="feature-card">
+                <div>
+                    <p class="kicker">Case Study</p>
+                    <h3>Llama2 Fine-Tuning for Privacy-Safe Code Generation</h3>
+                    <p>I turned a constrained, enterprise-style problem into a working system by curating mixed-quality code data, pivoting from a base model to a chat model, and optimizing with QLoRA. The outcome was a measurable lift on automated coding metrics while maintaining a low-cost training setup.</p>
+                </div>
+                <a class="cta" href="/project-llama2/">See the case study</a>
+            </article>
+        </div>
+    </section>
+</main>
