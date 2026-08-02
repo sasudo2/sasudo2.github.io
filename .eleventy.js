@@ -2,6 +2,7 @@ module.exports = function (eleventyConfig) {
   // Copy assets folder through to _site unchanged
   eleventyConfig.addPassthroughCopy("assets");
   eleventyConfig.addPassthroughCopy("style.css");
+  eleventyConfig.addPassthroughCopy("CNAME");
 
   return {
     // Only process .njk and .md — ignore the existing plain .html files
