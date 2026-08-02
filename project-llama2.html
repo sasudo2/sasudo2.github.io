@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Detailed case study: Llama2 fine-tuning for code generation.">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./assets/icon/favicon.png">
+    <title>Llama2 Case Study | Sanjay Shrestha</title>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <a class="brand" href="./index.html">Sanjay Shrestha</a>
+            <nav class="site-nav" aria-label="Primary">
+                <a href="./index.html">Home</a>
+                <a href="./about.html">About</a>
+                <a aria-current="page" href="./projects.html">Projects</a>
+                <a href="./blog.html">Blog</a>
+                <a href="./images.html">Photography</a>
+                <a href="./contact.html">Contact</a>
+                <a href="./resume.html">Resume</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container narrow">
+                <p class="kicker">Project Detail</p>
+                <h1>Llama2 Fine-Tuning for Privacy-Safe Code Generation</h1>
+                <p class="lead">Goal: produce domain-relevant code generation quality without exposing private code or requiring expensive infrastructure.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container narrow">
+                <section class="project-section">
+                    <h2>Problem</h2>
+                    <p class="project-header">The target use case required privacy control and cost efficiency, but available data was heterogeneous in quality, format, and style.</p>
+                </section>
+
+                <section class="project-section">
+                    <h2>What I Did</h2>
+                    <ul class="list">
+                        <li>Used QLoRA to make fine-tuning feasible on constrained hardware.</li>
+                        <li>Curated and normalized code examples from varied sources into a usable training corpus.</li>
+                        <li>Pivoted from a base model setup to a chat-model instruction format to improve practical code output behavior.</li>
+                    </ul>
+                </section>
+
+                <section class="project-section">
+                    <h2>What Failed</h2>
+                    <p>Initial base-model prompting produced lower-quality outputs and inconsistent formatting. This made evaluation unstable and highlighted the need for instruction-style training data.</p>
+                </section>
+
+                <section class="project-section">
+                    <h2>Result</h2>
+                    <ul class="list">
+                        <li>Evaluation metrics tracked: Pass@1, Pass@5, BLEU, CodeBLEU.</li>
+                        <li>Demonstrated measurable quality gain over the original baseline setup.</li>
+                        <li>Deliverable includes runnable code, model artifacts, and reproducible evaluation steps.</li>
+                    </ul>
+                    <div class="proof-gallery">
+                        <figure>
+                            <img src="./assets/photo/ollama_proof/llama_with_qlora.png" alt="Llama2 fine-tuning with QLoRA running">
+                            <figcaption>Fine-tuning with QLoRA</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="./assets/photo/ollama_proof/ollama.png" alt="Ollama model running locally">
+                            <figcaption>Model running via Ollama</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="./assets/photo/ollama_proof/passk_between_quantize_and_fine_tune.png" alt="Pass@k comparison between quantized and fine-tuned model">
+                            <figcaption>Pass@k — quantized vs fine-tuned</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="./assets/photo/ollama_proof/score_between_finetuned_and_quantize.png" alt="Score comparison between fine-tuned and quantized model">
+                            <figcaption>Score — fine-tuned vs quantized</figcaption>
+                        </figure>
+                    </div>
+                </section>
+
+                <section class="project-section">
+                    <h2>What Is Next</h2>
+                    <ul class="list">
+                        <li>Increase data volume with stricter quality filters.</li>
+                        <li>Experiment with reinforcement-style optimization for task-specific behavior.</li>
+                        <li>Add before/after output comparisons for faster hiring-manager review.</li>
+                    </ul>
+                </section>
+
+                <section class="project-section">
+                    <a class="cta" href="mailto:sanjayashrestha777@gmail.com">Email me</a>
+                    <p style="margin-top: 18px;"><a href="https://github.com/sasudo2">View repo</a></p>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <p>Sanjay Shrestha | Kathmandu, Nepal</p>
+            <div class="footer-links" aria-label="Social links">
+                <a href="mailto:sanjayashrestha777@gmail.com" aria-label="Email"><img class="icon" src="./assets/icon/mail.png" alt="Email"></a>
+                <a href="https://www.linkedin.com/in/sanjay-shrestha-58b3b7275/" aria-label="LinkedIn"><img class="icon" src="./assets/icon/linkedin.png" alt="LinkedIn"></a>
+                <a href="https://github.com/sasudo2" aria-label="GitHub"><img class="icon" src="./assets/icon/github.png" alt="GitHub"></a>
+                <a href="https://www.instagram.com/cat_said_go/" aria-label="Instagram"><img class="icon" src="./assets/icon/instagram.png" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

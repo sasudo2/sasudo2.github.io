@@ -5,86 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <link rel="shortcut icon" href="./assets/icon/favicon.png">
-    <title>Photos</title>
+    <title>Photography | Sanjay Shrestha</title>
 </head>
 <body>
-    <header style="height:20rem">
-         <!-- navigation bar start -->
-        <div class="n">
-            <div>
-                <a href="./index.html" class="name"><h1>Sanjay Shrestha</h1></a>
-            </div>
-            <div class="menu">
-                <label for="trigger">
-                    <input type="checkbox" class="trigger" id="trigger" />
-                    <div class="hamburger">
-                        <img src="./assets/icon/white_menu.png" alt="menu">
-                    </div>
-                    <nav>
-                      <ul>
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="#">Images</a></li>
-                        <li><a href="./assets/portfolio/My_CV (3).pdf">About</a></li>
-                      </ul>
-                    </nav>
-                    </label>
-            </div>
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <a class="brand" href="./index.html">Sanjay Shrestha</a>
+            <nav class="site-nav" aria-label="Primary">
+                <a href="./index.html">Home</a>
+                <a href="./about.html">About</a>
+                <a href="./projects.html">Projects</a>
+                <a href="./blog.html">Blog</a>
+                <a aria-current="page" href="./images.html">Photography</a>
+                <a href="./contact.html">Contact</a>
+                <a href="./resume.html">Resume</a>
+            </nav>
         </div>
-        <!-- navigation bar end -->
-        <!-- hero side -->
-        <div class="hero">
-            <div class="aboutme">
-                <h1>Hey, There</h1>
-                here are some photos i took.
-
-            </div>
-        </div>
-        <!-- end of hero side -->
     </header>
 
-    <div class="row">
-        <div class="column">
-          <img src="./assets/photo/photography/01.jpg">
-          <img src="./assets/photo/photography/02.jpg">
-          <img src="./assets/photo/photography/03.jpg">
-          <img src="./assets/photo/photography/04.jpg">
-        </div>
-        <div class="column">
-            <img src="./assets/photo/photography/05.jpg">
-            <img src="./assets/photo/photography/06.jpg">
-            <img src="./assets/photo/photography/07.jpg">
-            <img src="./assets/photo/photography/08.jpg">
-        </div>
-        <div class="column">
-          <img src="./assets/photo/photography/09.jpg">
-          <img src="./assets/photo/photography/10.jpg">
-          <img src="./assets/photo/photography/11.jpg">
-          <img src="./assets/photo/photography/12.jpg">
-        </div>
-        <div class="column">
-          <img src="./assets/photo/photography/13.jpg">
-          <img src="./assets/photo/photography/14.jpg">
-          <img src="./assets/photo/photography/15.jpg">
-          <img src="./assets/photo/photography/16.jpg">
-        </div>
-    </div>  
-    
+    <main>
+        <section class="section">
+            <div class="container narrow">
+                <p class="kicker">Photography</p>
+                <h1>Street, travel, and everyday moments</h1>
+                <p>Photography is where I practice observation and composition. Those same habits influence how I analyze noisy data and model behavior.</p>
+            </div>
+        </section>
 
-    <div class="end">
-        <h1>SANJAY SHRESTH | © 2023</h1>
-        <P>Kathmandu, Nepal</P>
-        <div class="mail">
-            If you are thinkin of contacting me or would like to 
-            discuss a project about a project. <a href="mailto:sanjayashrestha777@gmail.com">Drop me a line.</a>
+        <section class="section">
+            <div class="container gallery" aria-label="Photo gallery">
+                <img src="./assets/photo/photography/01.jpg" alt="Photography work 01">
+                <img src="./assets/photo/photography/02.jpg" alt="Photography work 02">
+                <img src="./assets/photo/photography/03.jpg" alt="Photography work 03">
+                <img src="./assets/photo/photography/04.jpg" alt="Photography work 04">
+                <img src="./assets/photo/photography/05.jpg" alt="Photography work 05">
+                <img src="./assets/photo/photography/06.jpg" alt="Photography work 06">
+                <img src="./assets/photo/photography/07.jpg" alt="Photography work 07">
+                <img src="./assets/photo/photography/08.jpg" alt="Photography work 08">
+                <img src="./assets/photo/photography/09.jpg" alt="Photography work 09">
+                <img src="./assets/photo/photography/10.jpg" alt="Photography work 10">
+                <img src="./assets/photo/photography/11.jpg" alt="Photography work 11">
+                <img src="./assets/photo/photography/12.jpg" alt="Photography work 12">
+                <img src="./assets/photo/photography/13.jpg" alt="Photography work 13">
+                <img src="./assets/photo/photography/14.jpg" alt="Photography work 14">
+                <img src="./assets/photo/photography/15.jpg" alt="Photography work 15">
+                <img src="./assets/photo/photography/16.jpg" alt="Photography work 16">
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <p>Sanjay Shrestha | Kathmandu, Nepal</p>
+            <div class="footer-links" aria-label="Social links">
+                <a href="mailto:sanjayashrestha777@gmail.com" aria-label="Email"><img class="icon" src="./assets/icon/mail.png" alt="Email"></a>
+                <a href="https://www.linkedin.com/in/sanjay-shrestha-58b3b7275/" aria-label="LinkedIn"><img class="icon" src="./assets/icon/linkedin.png" alt="LinkedIn"></a>
+                <a href="https://github.com/sasudo2" aria-label="GitHub"><img class="icon" src="./assets/icon/github.png" alt="GitHub"></a>
+                <a href="https://www.instagram.com/cat_said_go/" aria-label="Instagram"><img class="icon" src="./assets/icon/instagram.png" alt="Instagram"></a>
+            </div>
         </div>
-        <div class="logo">
-            <a href="mailto:sanjayashrestha777@gmail.com" class="mail2"><img src="./assets/icon/mail.png"></a>
-            <a href="https://www.linkedin.com/in/sanjay-shrestha-58b3b7275/" class="linkedin"><img src="./assets/icon/linkedin.png"></a>
-            <a href="https://www.instagram.com/cat_said_go/" class="insta2"><img src="./assets/icon/instagram.png"></a>
-            <a href="https://github.com/sasudo2" class="git2"><img src="./assets/icon/github.png"></a>
-            <a href="./assets/portfolio/My_CV (3).pdf" class="port"> <img src="./assets/icon/portfolio.png"></a>
-        </div>
-    </div>
+    </footer>
     
 </body>
 </html>
